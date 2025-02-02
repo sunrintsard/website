@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+* {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+nav, main, section, footer {
+    max-width: 90rem;
+}
+
+section {
+    height: 100vh;
+    padding-bottom: 1000px;
+}
+
+main h1, section h1 {
+    font-size: 3rem;
+}
+
+main {
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin: 1rem;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+nav a {
+    height: min-content;
+
+    color: white;
+    text-decoration: none;
+}
+
+nav a > img {
+    display: block;
+}
+
+nav > div {
+    padding: 0 2rem;
+    height: 4rem;
+
+    border: .1rem rgba(255, 255, 255, .1) solid;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(.4rem);
+}
+
+footer::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    z-index: -1;
+
+    background-color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    gap: 1.5rem;
+
+    width: 100%;
+    height: 20rem;
+}
+
+footer img {
+    height: 2rem;
+}
+
+footer hr {
+    width: 100%;
+}
+
+footer > div {
+    display: grid;
+    gap: 1rem;
+}
+
+footer > div > div {
+    display: flex;
+    gap: .5rem;
+}
